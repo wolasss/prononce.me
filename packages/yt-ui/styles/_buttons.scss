@@ -1,0 +1,17 @@
+@import "variables";
+
+.btn {
+	border-radius: 0;
+}
+
+.btn-primary {
+	background: $button-primary;
+	border: 0;
+	border-bottom: 3px solid $button-primary-border;
+	color: $button-primary-text;
+
+	&:hover {
+		background: $button-primary-hover;
+		border-bottom: 3px solid $button-primary-hover;
+	}
+}
