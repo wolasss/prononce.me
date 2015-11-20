@@ -75,10 +75,28 @@ h1 {
 
 .video-player {
 	margin: 15px 0;
+	position: relative;
 }
 
 .video-caption {
 	font-size: 26px;
     font-weight: 300;
     font-style: italic;
+}
+
+.nav-container {
+	position: absolute;
+	top: 38%;
+	width: 100%;
+	font-size: 72px;
+}
+
+.nav-previous {
+	left: 15%;
+	position: absolute;
+}
+
+.nav-next {
+	right: 15%;
+	position: absolute;
 }

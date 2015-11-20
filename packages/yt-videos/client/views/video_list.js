@@ -1,13 +1,13 @@
-var currentCaption = new ReactiveVar(0);
+Session.setDefault("currentCaption", 0);
 
 Template.ytVideoList.helpers({
 	getCurrentCaption: function() {
-		return currentCaption.get() + 1;
+		return Session.get("currentCaption") + 1;
 	},
 	getCaptionsLength: function(){
 		return this.captions.fetch().length;
 	},
 	currentCaption: function() {
-		return this.captions.fetch()[currentCaption.get()];
+		return this.captions.fetch()[Session.get("currentCaption")];
 	}
 });
