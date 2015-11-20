@@ -59,3 +59,26 @@ h1 {
     font-weight: 300;
     font-size: 18px;
 }
+
+.search-result {
+	margin: 50px 0;
+
+	span {
+		font-size: 16px;
+		font-weight: bold;
+	}
+}
+
+.caption {
+	text-align: center;
+}
+
+.video-player {
+	margin: 15px 0;
+}
+
+.video-caption {
+	font-size: 26px;
+    font-weight: 300;
+    font-style: italic;
+}
