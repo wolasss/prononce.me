@@ -16,3 +16,9 @@ standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 ecmascript              # Enable ECMAScript2015+ syntax in app code
 
+tap:i18n
+twbs:bootstrap
+iron:router
+yt
+yt-ui
+yt-layout
