@@ -8,9 +8,12 @@
 				<a href="#"><i class="fa fa-angle-right nav-next"></i></a>
 			{{/unless}}
 		</div>
-		<iframe width="640" height="360" src="https://www.youtube.com/embed/{{video}}?start={{getStartTime}}&autoplay=1" frameborder="0" allowfullscreen></iframe>
+		<iframe width="640" height="360" src="https://www.youtube.com/embed/{{video}}?start={{getStartTime}}&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
 	</div>
 	<div class="video-caption">
 		“...{{{text}}}..”
+	</div>
+	<div class="nav-bottom">
+		<a href="#"><i class="fa fa-repeat nav-repeat"></i></a>
 	</div>
 </template>

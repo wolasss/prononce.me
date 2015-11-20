@@ -20,5 +20,11 @@ Template.ytVideo.events({
 	'click .nav-next': function() {
 		var currentCaption = parseInt(Session.get("currentCaption"), 10);
 		Session.set("currentCaption", currentCaption+1);
+	},
+	'click .nav-repeat': function() {
+		var iframe = $('iframe')[0];
+
+		iframe.contentWindow.postMessage('{"event":"command","func":"seekTo","args":['+parseInt(this.start,10)+', true]}', '*');
+		iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
 	}
 });
