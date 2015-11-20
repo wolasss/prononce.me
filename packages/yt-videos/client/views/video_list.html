@@ -1,0 +1,13 @@
+<template name="ytVideoList">
+	<div class="container">
+		<div class="row">
+			{{_ "how_to" this.query "1" "100"}}
+
+			<div class="caption">
+				{{#each captions}}
+					{{> ytVideo}}
+				{{/each}}
+			</div>
+		</div>
+	</div>
+</template>

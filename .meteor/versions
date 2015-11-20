@@ -1,4 +1,5 @@
 aldeed:simple-schema@1.3.3
+audit-argument-checks@1.0.4
 autoupdate@1.2.4
 babel-compiler@5.8.24_1
 babel-runtime@0.1.4
@@ -79,5 +80,7 @@ url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
 yt@0.0.0
+yt-captions@0.0.0
 yt-layout@0.0.0
 yt-ui@0.0.0
+yt-videos@0.0.0

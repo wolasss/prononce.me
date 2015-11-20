@@ -24,12 +24,6 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>{{_ "title"}}</h1>
-			</div>
-			<div class="col-md-12">
-				{{_ "desc"}}
-			</div>
-			<div class="col-md-12">
 				<form class="searchForm form-inline">
 					<input type="text" class="form-control">
 					<button type="submit" class="btn btn-default"><i class="fa fa-search"></i> {{_ "search"}}</button>
@@ -41,6 +35,16 @@
 </template>
 
 <template name="ytHeader">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>{{_ "title"}}</h1>
+			</div>
+			<div class="col-md-12">
+				{{_ "desc"}}
+			</div>
+		</div>
+	</div>
 </template>
 
 <template name="ytFooter">

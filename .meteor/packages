@@ -22,3 +22,7 @@ iron:router
 yt
 yt-ui
 yt-layout
+yt-captions
+yt-videos
+check
+audit-argument-checks
