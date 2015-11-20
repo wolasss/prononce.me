@@ -16,7 +16,6 @@ Router.map(function(){
 
             var highlightKeyword = function(doc) {
                 doc.text = doc.text.replace(_self.params.q, "<strong>"+_self.params.q+"</strong>");
-                console.log(doc);
                 return doc;
             };
 
