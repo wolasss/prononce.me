@@ -174,7 +174,10 @@ h1 {
 		font-size: 16px;
 		background: #fff;
 		padding: 3px 6px;
-
+		border: 1px solid #cccccc;
+		width: 30px;
+		text-align: center;
+    
 		&:hover {
 			text-decoration: none;
 		}
