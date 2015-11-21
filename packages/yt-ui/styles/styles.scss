@@ -25,6 +25,10 @@ body {
 header {
 	padding: 50px 0;
 	background: $background-blue;
+
+	a:hover, a:active, a:focus {
+		text-decoration: none;
+	}
 }
 
 h1 {
@@ -129,6 +133,7 @@ h1 {
     font-size: 12px;
 }
 
+
 .helper-keyboard {
 	margin: 5px 10px;
 
@@ -156,4 +161,29 @@ h1 {
 	.share-twitter {
 		color: #55acee;
 	}
+}
+
+.country-flag {
+	width: 100%;
+	height: 10px;
+
+	.flag-third {
+		float: left;
+		width: 33.333%;
+		height: 10px;
+	}
+
+	.blue {
+		background: #000066;
+	}
+
+	.white {
+		background: #fff;
+	}
+
+	.red {
+		background: #d1081d;
+	}
+
+
 }
