@@ -30,6 +30,6 @@ Template.ytSearch.helpers({
 		return Session.get("currentQuery");
 	},
 	char: function() {
-		return ["ù", "û", "ü", "ÿ", "à", "â", "æ", "ç", "é", "è", "ê", "ë", "ï", "î", "ô", "œ"]; //should should be external and language specific
+		return ["à", "â", "æ", "ç", "é", "è", "ê", "ë", "ï", "î", "ô", "œ", "ù", "û", "ü", "ÿ"]; //should should be external and language specific
 	}
 });
