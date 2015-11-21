@@ -23,49 +23,56 @@ body {
 }
 
 header {
-	margin: 50px 0;
+	padding: 50px 0;
+	background: $background-blue;
 }
 
 h1 {
-	color: $text-color;
+	color: $background-color;
 	font-size: 48px;
 	font-weight: 300;
 }
 
+.search-bar {
+	background: $color-grey;
+}
+
 .searchForm {
+	padding: 35px 25px;
 
 	.query {
 		width: 90%;
 		float: left;
 		height: 47px;
-		color: $text-color;
-		font-weight: 400;
+		color: darken($background-blue, 10);
+		font-weight: 300;
 		font-size: 18px;
 
 		&::-webkit-input-placeholder {
-		   color: #9e918e;
+		   color: #cccccc;
 		}
 	}
+
 
 	.search-button {
 		width: 10%;
 	}
-
 }
 
 .desc {
 	margin: 3px;
-    color: #633a46;
+    color: $background-color;
     font-weight: 300;
     font-size: 18px;
 }
 
 .search-result {
-	margin: 50px 0;
+	margin: 20px 0;
 
 	span {
-		font-size: 16px;
+		font-size: 24px;
 		font-weight: bold;
+		color: $heading-color;
 	}
 }
 

@@ -1,8 +1,11 @@
 $font-stack: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
-$background-color: #e5e0d5;
-$text-color: #6e4250;
+$background-color: #fff;
+$background-blue: #00acee;
+$text-color: #0c0c0c;
+$heading-color: darken($background-blue, 10);
 $placeholder-color: #9e918e;
-$button-primary: #43baaf;
-$button-primary-hover: #41a59d;
-$button-primary-border: #399b93;
+$button-primary: $background-blue;
+$button-primary-hover: darken($button-primary, 10);
+$button-primary-border: darken($button-primary, 10);
 $button-primary-text: #f7f7f7;
+$color-grey: #ecedef;

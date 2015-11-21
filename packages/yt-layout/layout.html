@@ -1,15 +1,13 @@
 <template name="ytLayout">
-	<div class="container">
-		<header>
-			{{> yield region='header'}}
-		</header>
+	<header>
+		{{> yield region='header'}}
+	</header>
 
-		<div class="content">
-			{{> yield}}
-		</div>
-
-		<footer>
-			{{> yield region='footer'}}
-		</footer>
+	<div class="content">
+		{{> yield}}
 	</div>
+
+	<footer>
+		{{> yield region='footer'}}
+	</footer>
 </template>

@@ -1,8 +1,10 @@
+@import "variables";
+
 .form-control {
 	border-radius: 0;
 
 	&:focus {
-		border-color: #bcadab;
+		border-color: $background-blue;
 		border-width: 2px;
 		box-shadow: none;
 		-webkit-box-shadow: none;
