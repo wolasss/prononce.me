@@ -1,7 +1,6 @@
 function searchQuery() {
 	var query = $('.query').val();
 	if(query) {
-		Session.set("currentQuery", query);
 		Router.go('/pronounce/'+query);
 	}
 }

@@ -9,7 +9,8 @@ Router.map(function(){
           'ytHeader': {to: 'header'},
           'ytFooter': {to: 'footer'}
         },
-        onBeforeAction: function() {               
+        onBeforeAction: function() {
+            Session.set("currentQuery", ""); 
             this.next();
         }
     });

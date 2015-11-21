@@ -9,7 +9,8 @@ html {
 }
 
 body { 
-	height: 100%; 
+	min-height: 100%;
+	position: relative;
 	margin: 0; 
 	padding: 0;
 	font-family: $font-stack;
@@ -17,9 +18,41 @@ body {
 	color: $text-color;
 }
 
+.examples {
+	padding-top: 25px;
+    font-size: 24px;
+
+    a {
+    	margin-right: 8px;
+    	background: #ecedef;
+	    color: #333;
+	    font-size: 14px;
+	    padding: 6px 10px;
+
+	    &:hover {
+	    	color: $background-blue;
+	    	text-decoration: none;
+	    }
+    }
+}
+
 .video-caption strong {
 	background-color: #ff0;
     padding: 4px;
+}
+
+footer {
+	background: $color-grey;
+	height: 30px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	padding: 6px 0;
+    font-size: 12px;
+
+    a {
+    	margin-right: 5px;
+    }
 }
 
 header {
@@ -56,7 +89,6 @@ h1 {
 		   color: #cccccc;
 		}
 	}
-
 
 	.search-button {
 		width: 10%;

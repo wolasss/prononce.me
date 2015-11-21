@@ -19,6 +19,8 @@ Router.map(function(){
                 return doc;
             };
 
+            Session.set("currentQuery", _self.params.q);
+
             return {
                 query: _self.params.q,
                 captions: YT.Captions.find({}, {transform: highlightKeyword})
