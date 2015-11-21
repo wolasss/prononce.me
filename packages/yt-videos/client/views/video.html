@@ -15,8 +15,8 @@
 	</div>
 	<div class="nav-bottom">
 		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-backward nav-backward"></i><div class="stage-icon-desc">-5s</div></a>
-		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-repeat nav-repeat"></i><div class="stage-icon-desc">replay</div></a>
-		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-flag-o"></i><div class="stage-icon-desc">report</div></a>
+		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-repeat nav-repeat"></i><div class="stage-icon-desc">{{_ "replay"}}</div></a>
+		<a href="#" class="stage-icon hvr-rotate" data-toggle="modal" data-target="#reportModal"><i class="fa fa-flag-o"></i><div class="stage-icon-desc">{{_ "report"}}</div></a>
 	</div>
 	<div class="share-video">
 		{{_ "share"}}
@@ -24,4 +24,6 @@
 		<a href="#" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
 		<a href="#" class="share-google"><i class="fa fa-google-plus-square"></i></a>
 	</div>
+
+	{{> ytReportModal}}
 </template>

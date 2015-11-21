@@ -1,0 +1,17 @@
+<template name="ytReportModal">
+
+  <div id="reportModal" class="report-modal modal fade" data-transcript-id="{{this._id}}">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- dialog body -->
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          
+          {{> quickForm id="reportIssue" schema=getSchema }}
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+</template>

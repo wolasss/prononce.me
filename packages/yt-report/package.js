@@ -4,12 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
     var both = ['client', 'server'];
-    api.use(['yt', 'tap:i18n', 'templating', 'reactive-var', 'session', 'yt-report'], both);
-
-    api.add_files([
-        'locales/en.i18n.json',
-        'locales/fr.i18n.json'
-    ], both);
+    api.use(['yt', 'tap:i18n', 'templating', 'aldeed:autoform', 'aldeed:collection2', 'mongo'], both);
 
     api.add_files('common/model/model.js', both);
     api.add_files('client/routes/router.js', 'client');
@@ -23,11 +18,13 @@ Package.on_use(function (api) {
 
     api.add_files('client/subscriptions/subscriptions.js', 'client');
 
-    api.add_files('client/views/video.html', 'client');
-    api.add_files('client/views/video.js', 'client');
+    api.add_files('client/views/modal.html', 'client');
+    api.add_files('client/views/modal.js', 'client');
 
-    api.add_files('client/views/video_list.html', 'client');
-    api.add_files('client/views/video_list.js', 'client');
+    api.add_files([
+        'locales/en.i18n.json',
+        'locales/fr.i18n.json'
+    ], both);
 });
 
 Package.on_test(function (api) {
