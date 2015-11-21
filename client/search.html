@@ -4,6 +4,11 @@
 			<div class="searchForm form-inline">
 				<input type="text" class="query form-control" placeholder="{{_ 'placeholder'}}" value="{{getCurrentQuery}}">
 				<button class="btn btn-primary btn-lg search-button"><i class="fa fa-search"></i> {{_ "search"}}</button>
+				<div class="helper-keyboard">
+					{{#each char}}
+						<a href="#" class="char-picker">{{this}}</a>
+					{{/each}}
+				</div>
 			</div>
 		</div>
 	</div>
