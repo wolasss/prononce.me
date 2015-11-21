@@ -86,6 +86,7 @@ url@1.0.5
 webapp@1.2.3
 webapp-hashing@1.0.5
 yt@0.0.0
+yt-autoform-recaptcha@0.0.0
 yt-captions@0.0.0
 yt-layout@0.0.0
 yt-report@0.0.0
