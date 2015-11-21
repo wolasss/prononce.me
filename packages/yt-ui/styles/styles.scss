@@ -104,4 +104,20 @@ h1 {
 .nav-bottom {
 	margin: 15px 0;
 	font-size: 36px;
+
+	a {
+		margin-right: 20px;
+	}
+}
+
+.stage-icon {
+	position: relative;
+}
+
+.stage-icon-desc {
+	display: inline-block;
+    position: absolute;
+    bottom: -25%;
+    left: 35%;
+    font-size: 12px;
 }

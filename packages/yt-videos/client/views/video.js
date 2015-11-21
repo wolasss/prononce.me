@@ -26,5 +26,12 @@ Template.ytVideo.events({
 
 		iframe.contentWindow.postMessage('{"event":"command","func":"seekTo","args":['+parseInt(this.start,10)+', true]}', '*');
 		iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
+	},
+	'click .nav-backward': function() {
+		var iframe = $('iframe')[0];
+		var time = parseInt(this.start,10)-5;
+		
+		iframe.contentWindow.postMessage('{"event":"command","func":"seekTo","args":['+time+', true]}', '*');
+		iframe.contentWindow.postMessage('{"event":"command","func":"playVideo","args":""}', '*');
 	}
 });
