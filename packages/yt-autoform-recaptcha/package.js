@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
     var both = ['client', 'server'];
-    api.use(['yt', 'tap:i18n', 'aldeed:autoform', 'templating', 'appshore:recaptcha'], both);
+    api.use(['yt', 'tap:i18n', 'aldeed:autoform', 'templating', 'appshore:recaptcha', 'wolas:alerts'], both);
 
     api.add_files('common/model/model.js', both);
     api.add_files('client/routes/router.js', 'client');

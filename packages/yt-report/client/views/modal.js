@@ -19,10 +19,11 @@ AutoForm.hooks({
 			Meteor.call("captcha/validate", captcha, function (error, result) {
 				if(error || !result.success) {
 					//wrong captcha
-					console.log("wrong captcha");
+					Alerts.error(TAPi18n.__("wrong_captcha"), "recaptcha_alerts");
 					self.done(new Error("Captcha Error"));
 				} else {
 					Meteor.call("reports/send", insertDoc, function(err, res){
+						Alerts.success(TAPi18n.__("thanks_contribution"), "video_alerts");
 						self.done();
 					});
 				}
