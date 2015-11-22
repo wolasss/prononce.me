@@ -5,5 +5,12 @@
 	"search": "Say it!",
 	"about": "About",
 	"donate": "Donate",
-	"see_examples": "For example: "
+	"see_examples": "For example: ",
+	"coffee": {
+		"title": "This app is free",
+		"desc": "And it always will! It was created in our free time, so if you enjoy it you can always buy us a coffee or contribute to the development.",
+		"githublink": "Source code is hosted on github: ",
+		"paypallink": "And here you can buy us a coffee: ",
+		"dismiss": "It's sweet and all, but don't show me this again."
+	}
 }

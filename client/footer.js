@@ -1,6 +1,9 @@
 Template.ytFooter.helpers({
 	isActiveLang: function(lang) {
 		return TAPi18n.getLanguage() === lang;
+	},
+	hideCoffee : function() {
+		return ReactiveStore.get("ytCoffee");
 	}
 });
 

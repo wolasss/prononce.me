@@ -246,3 +246,25 @@ h1 {
 .lang-picker .active {
 	font-weight: bold;
 }
+
+.donate {
+	color: #333;
+    opacity: 0.4;
+
+    &:hover {
+    	opacity: 1;
+    }
+}
+
+.donate-modal {
+	font-size: 14px;
+
+	.modal-title {
+		color: #066da0;
+    	margin-bottom: 10px;
+	}
+
+	.coffeeDismiss {
+		margin-right: 10px;
+	}
+}

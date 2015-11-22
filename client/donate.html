@@ -1,0 +1,41 @@
+<template name="ytDonateModal">
+	<div id="donateModal" class="donate-modal modal fade" tabindex="-1" data-width="760" style="display:none;">
+		<div class="modal-dialog">
+			 <div class="modal-content">
+		      <div class="modal-body">
+		      	<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      	<h3 class="modal-title">{{_ "coffee.title"}}</h3>
+
+		        <p>{{_ "coffee.desc"}}</p>
+		        
+		        <p>{{_ "coffee.githublink"}}</p>
+				<a href="https://github.com/wolasss/youtube-prononciation">wolasss/youtube-prononciation</a>
+				
+				<p class="githubLinks">
+					<iframe src="http://ghbtns.com/github-btn.html?user=wolasss&repo=youtube-prononciation&type=follow&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
+				
+					<iframe src="http://ghbtns.com/github-btn.html?user=wolasss&repo=youtube-prononciation&type=fork&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
+				</p>
+				
+				<div class="text-center">
+					<p>{{_ "coffee.paypallink"}}</p>
+					<p>
+						<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+							">
+							<input type="image" src="https://www.paypalobjects.com/pl_PL/PL/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal — Płać wygodnie i bezpiecznie">
+							<img alt="" border="0" src="https://www.paypalobjects.com/pl_PL/i/scr/pixel.gif" width="1" height="1">
+							</form>
+					</p>
+				</div>
+				<p>
+					<input type="checkbox" class="coffeeDismiss">{{_ "coffee.dismiss"}}
+				</p>
+		      </div>
+		    </div><!-- /.modal-content -->
+		</div>
+	</div>
+</template>
