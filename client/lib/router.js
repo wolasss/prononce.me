@@ -1,0 +1,3 @@
+Router.configure({
+	loadingTemplate: 'ytLoading'
+});
