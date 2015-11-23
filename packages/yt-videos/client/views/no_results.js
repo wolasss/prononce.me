@@ -1,5 +1,5 @@
 Template.ytNoResults.created = function () {
-	this.subscribe("similarWords", Router.current().params.q);
+	this.subscribe("similarWords", YT.NormalizeAccents(Router.current().params.q));
 };
 
 Template.ytNoResults.helpers({

@@ -1,12 +1,12 @@
 Meteor.publish("similarWords", function(query){
 	check(query, String);
 
-	var candidates = YT.Words.find({text: new RegExp(query.slice(0, 2))});
+	var candidates = YT.Words.find({normalized: new RegExp(query.slice(0, 2))});
 	var candidates_arr = candidates.fetch();
 
 	if(candidates_arr.length) {
 		_.each(candidates_arr, function(c){
-			c.index = YT.WordsComparison.compare(c.text, query);
+			c.index = YT.WordsComparison.compare(c.normalized, query);
 		});
 	}
 

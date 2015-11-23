@@ -52,6 +52,7 @@ YT.WordsComparison = {
 
 		return [s1_vec, s2_vec];
 	},
+
 	compare: function(s1, s2) {
 		var vectors = this.buildVectors(s1, s2);
 		return similarity(vectors[0], vectors[1]);
