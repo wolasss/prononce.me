@@ -2,10 +2,14 @@
 	<span>{{_ "no_results"}}</span>
 	<p class="examples">
 		{{#if Template.subscriptionsReady}}
-			{{_ "may_check"}} 
-			{{#each similarWords}}
-				<a href="/pronounce/{{text}}" class="hvr-underline-from-left">{{text}}</a>
-			{{/each}}
+			{{#with similarWords}}
+				{{#if this.count}}
+					{{_ "may_check"}} 
+					{{#each this}}
+						<a href="/pronounce/{{text}}" class="hvr-underline-from-left">{{text}}</a>
+					{{/each}}
+				{{/if}}
+			{{/with}}
 		{{else}}
 			{{> ytLoading}}
 		{{/if}}
