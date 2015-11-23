@@ -1,0 +1,1 @@
+YT.Words = new Mongo.Collection("words");

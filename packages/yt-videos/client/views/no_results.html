@@ -1,0 +1,13 @@
+<template name="ytNoResults">
+	<span>{{_ "no_results"}}</span>
+	<p class="examples">
+		{{#if Template.subscriptionsReady}}
+			{{_ "may_check"}} 
+			{{#each similarWords}}
+				<a href="/pronounce/{{text}}" class="hvr-underline-from-left">{{text}}</a>
+			{{/each}}
+		{{else}}
+			{{> ytLoading}}
+		{{/if}}
+	</p>
+</template>

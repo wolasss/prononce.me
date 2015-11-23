@@ -1,9 +1,5 @@
-
-
 Router.map(function(){
     var self = this;
-
-
 
     this.route('ytCaptions', function(){
         this.render();
