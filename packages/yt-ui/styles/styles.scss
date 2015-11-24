@@ -19,6 +19,7 @@ body {
 }
 
 .logo {
+	display: none;
 	width: 75px;
 	float: left;
     margin-right: 15px;
@@ -284,15 +285,39 @@ iframe {
 	}
 }
 
+.share-links {
+	position: absolute;
+	right: 0;
+	color: #fff;
+    top: -55px;
+    text-align: center;
+    width: 100%;
+
+	a {
+		color: #fff;
+		box-shadow: 0 10px 10px -10px rgba(255,255,255,.4);
+		&:hover {
+			box-shadow: 0 10px 10px -10px rgba(255,255,255,1);
+		}
+	}
+}
+
+.logo-container {
+	margin-top: 55px;
+}
+
+@media(min-width: 768px) {
+	.logo {
+		display: block;
+		width: 100px;
+		margin-top: 10px;
+	}
+}
+
 @media(min-width: 1024px) {
 
 	header {
 		padding: 40px 0;
-	}
-
-	.logo {
-		width: 100px;
-		margin-top: 10px;
 	}
 
 	h1 {
@@ -336,6 +361,16 @@ iframe {
 		right: 15%;
 		position: absolute;
 		float: none;
+	}
+
+	.share-links {
+		top: -30px;
+		width: auto;
+		text-align: left;
+	}
+
+	.logo-container {
+		margin-top: 0;
 	}
 	
 }
