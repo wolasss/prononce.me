@@ -6,8 +6,9 @@ Template.ytVideoList.helpers({
 	},
 	getCaptionsLength: function(){
 		return this.captions.fetch().length;
-	},
-	currentCaption: function() {
-		return this.captions.fetch()[Session.get("currentCaption")];
 	}
+});
+
+Template.registerHelper("currentCaption", function() {
+	return this.captions.fetch()[Session.get("currentCaption")];
 });

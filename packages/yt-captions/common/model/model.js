@@ -1,1 +1,1 @@
-YT.Captions = new Mongo.Collection("captions");
+YT_APP.Captions = new Mongo.Collection("captions");

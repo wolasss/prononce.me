@@ -4,6 +4,6 @@ Meteor.methods({
 		check(doc.transcriptId, String);
 		check(doc.issue, String);
 
-		return YT.Reports.insert(doc);
+		return YT_APP.Reports.insert(doc);
 	}
 });

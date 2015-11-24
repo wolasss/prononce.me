@@ -8,9 +8,7 @@
 					<span>{{_ "how_to" this.query getCurrentCaption getCaptionsLength}}</span>
 
 					<div class="caption">
-						{{#with currentCaption}}
-							{{> ytVideo}}
-						{{/with}}
+						{{> ytVideo}}
 					</div>
 				{{else}}
 					{{> ytNoResults}}

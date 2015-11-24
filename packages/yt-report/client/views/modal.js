@@ -1,6 +1,6 @@
 Template.ytReportModal.helpers({
 	getSchema: function() {
-		return YT.ReportsSchema;
+		return YT_APP.ReportsSchema;
 	}
 });
 

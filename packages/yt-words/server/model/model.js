@@ -1,4 +1,4 @@
-YT.Words._ensureIndex( { text: "text" } );
+YT_APP.Words._ensureIndex( { text: "text" } );
 
 var similarity = function(vec1, vec2) {
 	var similarity = 0;
@@ -37,7 +37,7 @@ var similarity = function(vec1, vec2) {
 	return similarity.toFixed(4);
 };
 
-YT.WordsComparison = {
+YT_APP.WordsComparison = {
 
 	buildVectors: function(s1, s2) {
 		var joined = s1+s2;

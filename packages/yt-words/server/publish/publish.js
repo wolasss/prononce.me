@@ -1,12 +1,12 @@
 Meteor.publish("similarWords", function(query){
 	check(query, String);
 
-	var candidates = YT.Words.find({normalized: new RegExp(query.slice(0, 2))});
+	var candidates = YT_APP.Words.find({normalized: new RegExp(query.slice(0, 2))});
 	var candidates_arr = candidates.fetch();
 
 	if(candidates_arr.length) {
 		_.each(candidates_arr, function(c){
-			c.index = YT.WordsComparison.compare(c.normalized, query);
+			c.index = YT_APP.WordsComparison.compare(c.normalized, query);
 		});
 	}
 
@@ -17,5 +17,5 @@ Meteor.publish("similarWords", function(query){
 	var result_arr = candidates_arr.slice(0,5);
 	var result_arr_ids = _.pluck(result_arr, "_id");
 
-	return YT.Words.find({_id: {$in: result_arr_ids}});
+	return YT_APP.Words.find({_id: {$in: result_arr_ids}});
 });

@@ -1,5 +1,5 @@
 Meteor.publish("captions", function(query){
 	check(query, String);
 
-	return YT.Captions.find({$text: { $search: query } });
+	return YT_APP.Captions.find({$text: { $search: query } });
 });

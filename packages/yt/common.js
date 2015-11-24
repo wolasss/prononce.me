@@ -1,3 +1,3 @@
 if ('undefined' === typeof YT) {
-	YT = {};
+	YT_APP = {};
 }

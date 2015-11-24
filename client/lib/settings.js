@@ -1,4 +1,4 @@
-YT.Settings = {};
+YT_APP.Settings = {};
 
-YT.Settings.Google = {};
-YT.Settings.Google.captcha_key = "your_public_key_from_google";
+YT_APP.Settings.Google = {};
+YT_APP.Settings.Google.captcha_key = "";

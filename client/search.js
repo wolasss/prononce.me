@@ -1,6 +1,7 @@
 function searchQuery() {
 	var query = $('.query').val();
 	if(query) {
+		
 		Router.go('/pronounce/'+query);
 	}
 }

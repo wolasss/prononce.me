@@ -1,4 +1,4 @@
-YT.ReportsSchema = new SimpleSchema({
+YT_APP.ReportsSchema = new SimpleSchema({
 	issue: {
 		type: String,
 		label: function() {

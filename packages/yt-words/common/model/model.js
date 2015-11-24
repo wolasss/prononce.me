@@ -1,4 +1,4 @@
-YT.Words = new Mongo.Collection("words");
+YT_APP.Words = new Mongo.Collection("words");
 
 var accents = [ {ch: "à", sub: "a"},
 				{ch: "â", sub: "a"},
@@ -18,7 +18,7 @@ var accents = [ {ch: "à", sub: "a"},
 				{ch: "ÿ", sub: "y"}]; //should should be external and language specific
 
 
-YT.NormalizeAccents = function(str) {
+YT_APP.NormalizeAccents = function(str) {
 	_.each(accents, function(a){
 		str = str.replace(a.ch, a.sub);
 	});

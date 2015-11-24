@@ -34,6 +34,7 @@ fourseven:scss@0.9.6
 geojson-utils@1.0.4
 handlebars@1.0.4
 hot-code-push@1.0.0
+hpx7:youtube-iframe-player@0.4.15
 html-tools@1.0.5
 htmljs@1.0.5
 http@1.1.1
@@ -63,6 +64,7 @@ mongo-id@1.0.1
 mongo-livedata@1.0.9
 mrt:reactive-store@0.0.1
 npm-mongo@1.4.39_1
+numtel:template-from-string@0.1.0
 observe-sequence@1.0.7
 ordered-dict@1.0.4
 promise@0.5.1

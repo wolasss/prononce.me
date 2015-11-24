@@ -4,7 +4,7 @@ Package.describe({
 
 Package.on_use(function (api) {
     var both = ['client', 'server'];
-    api.use(['yt', 'tap:i18n', 'templating', 'reactive-var', 'session', 'yt-report', 'wolas:alerts'], both);
+    api.use(['yt', 'tap:i18n', 'templating', 'reactive-var', 'session', 'yt-report', 'wolas:alerts', 'hpx7:youtube-iframe-player'], both);
 
     api.add_files([
         'locales/en.i18n.json',

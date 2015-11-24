@@ -1,30 +1,34 @@
 <template name="ytVideo">
-	<div class="video-player">
-		<div class="nav-container">
-			{{#unless isFirst}}
-				<a href="#"><i class="fa fa-angle-left nav-previous"></i></a>
-			{{/unless}}
-			{{#unless isLast}}
-				<a href="#"><i class="fa fa-angle-right nav-next"></i></a>
-			{{/unless}}
-		</div>
-		<iframe width="640" height="360" class="iframe-video" src="https://www.youtube.com/embed/{{video}}?start={{getStartTime}}&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>
-	</div>
-	<div class="video-caption">
-		“...{{{text}}}..”
-	</div>
-	<div class="nav-bottom">
-		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-backward nav-backward"></i><div class="stage-icon-desc">-5s</div></a>
-		<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-repeat nav-repeat"></i><div class="stage-icon-desc">{{_ "replay"}}</div></a>
-		<a href="#" class="stage-icon hvr-rotate" data-toggle="modal" data-target="#reportModal"><i class="fa fa-flag-o"></i><div class="stage-icon-desc">{{_ "report"}}</div></a>
-	</div>
-	{{> alerts container="video_alerts"}}
-	<div class="share-video">
-		{{_ "share"}}
-		<a href="#" class="share-facebook"><i class="fa fa-facebook-square"></i></a>
-		<a href="#" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
-		<a href="#" class="share-google"><i class="fa fa-google-plus-square"></i></a>
-	</div>
+	{{#with currentCaption}}
+		<div class="video-player">
+			<div class="nav-container">
+				{{#unless isFirst}}
+					<a href="#"><i class="fa fa-angle-left nav-previous"></i></a>
+				{{/unless}}
+				{{#unless isLast}}
+					<a href="#"><i class="fa fa-angle-right nav-next"></i></a>
+				{{/unless}}
+			</div>
+			{{> YTPlayer name="player"}}
+			<!--<iframe width="640" height="360" class="iframe-video" src="https://www.youtube.com/embed/{{video}}?start={{getStartTime}}&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
 
-	{{> ytReportModal}}
+		</div>
+		<div class="video-caption">
+			“...{{{text}}}..”
+		</div>
+		<div class="nav-bottom">
+			<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-backward nav-backward"></i><div class="stage-icon-desc">-5s</div></a>
+			<a href="#" class="stage-icon hvr-rotate"><i class="fa fa-repeat nav-repeat"></i><div class="stage-icon-desc">{{_ "replay"}}</div></a>
+			<a href="#" class="stage-icon hvr-rotate" data-toggle="modal" data-target="#reportModal"><i class="fa fa-flag-o"></i><div class="stage-icon-desc">{{_ "report"}}</div></a>
+		</div>
+		{{> alerts container="video_alerts"}}
+		<div class="share-video">
+			{{_ "share"}}
+			<a href="#" class="share-facebook"><i class="fa fa-facebook-square"></i></a>
+			<a href="#" class="share-twitter"><i class="fa fa-twitter-square"></i></a>
+			<a href="#" class="share-google"><i class="fa fa-google-plus-square"></i></a>
+		</div>
+
+		{{> ytReportModal}}
+	{{/with}}
 </template>

@@ -1,1 +1,1 @@
-YT.Reports = new Mongo.Collection("reports");
+YT_APP.Reports = new Mongo.Collection("reports");

@@ -22,7 +22,7 @@ Router.map(function(){
 
             return {
                 query: _self.params.q,
-                captions: YT.Captions.find({}, {transform: highlightKeyword})
+                captions: YT_APP.Captions.find({}, {transform: highlightKeyword})
             };
         },
         path: '/pronounce/:q',
