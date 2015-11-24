@@ -7,6 +7,11 @@ Router.map(function(){
         waitOn: function(){
             return Meteor.subscribe("captions", this.params.q);
         },
+        onBeforeAction: function() {
+            Session.set("currentCaption", 0);
+            Session.set("currentQuery", this.params.q);
+            this.render();
+        },
         data: function() {
             var _self = this;
 
@@ -15,9 +20,6 @@ Router.map(function(){
                 return doc;
             };
 
-            Session.set("currentQuery", _self.params.q);
-            Session.get("currentCaption", 0);
-            
             return {
                 query: _self.params.q,
                 captions: YT.Captions.find({}, {transform: highlightKeyword})
