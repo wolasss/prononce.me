@@ -1,4 +1,4 @@
-@import "fontawesome/font-awesome";
+@import "font-awesome/font-awesome";
 @import "variables";
 @import "buttons";
 @import "forms";
@@ -19,34 +19,86 @@ body {
 }
 
 .logo {
-	width: 100px;
-    float: left;
-    margin-top: 10px;
+	width: 75px;
+	float: left;
     margin-right: 15px;
 }
 
-.examples {
-	padding-top: 25px;
-    font-size: 24px;
+header {
+	padding: 20px 0;
+	background: $background-blue;
 
-    a {
-    	margin-right: 8px;
-    	background: #ecedef;
-	    color: #333;
-	    font-size: 14px;
-	    padding: 6px 10px;
-
-	    &:hover {
-	    	color: $background-blue;
-	    	text-decoration: none;
-	    }
-    }
+	a:hover, a:active, a:focus {
+		text-decoration: none;
+	}
 }
 
-.video-caption strong {
-	background-color: #ff0;
-    padding: 4px;
+h1 {
+	color: $background-color;
+	font-size: 36px;
+	font-weight: 300;
 }
+
+.desc {
+	margin: 15px 3px 0 3px;;
+    color: $background-color;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+
+.country-flag {
+	width: 100%;
+	height: 10px;
+
+	.flag-third {
+		float: left;
+		width: 33.333%;
+		height: 10px;
+	}
+
+	.blue {
+		background: #000066;
+	}
+
+	.white {
+		background: #fff;
+	}
+
+	.red {
+		background: #d1081d;
+	}
+}
+
+.search-bar {
+	background: $color-grey;
+}
+
+.searchForm {
+	padding: 15px 0;
+
+	.query {
+		width: 88%;
+		float: left;
+		height: 47px;
+		color: darken($background-blue, 10);
+		font-weight: 300;
+		font-size: 18px;
+
+		&::-webkit-input-placeholder {
+		   color: #cccccc;
+		}
+	}
+
+	.search-button {
+		width: 12%;
+
+		span {
+			display: none;
+		}
+	}
+}
+
 
 footer {
 	background: $color-grey;
@@ -62,23 +114,57 @@ footer {
     }
 }
 
-header {
-	padding: 40px 0;
-	background: $background-blue;
 
-	a:hover, a:active, a:focus {
-		text-decoration: none;
+.examples {
+	padding-top: 25px;
+    font-size: 14px;
+
+    a {
+    	margin-right: 8px;
+    	background: #ecedef;
+	    color: #333;
+	    font-size: 14px;
+	    padding: 6px 10px;
+
+	    &:hover {
+	    	color: $background-blue;
+	    	text-decoration: none;
+	    }
+    }
+}
+
+.helper-keyboard {
+	padding: 15px 0;
+
+	a {
+		margin-right: 8px;
+		margin-bottom: 8px;
+		font-size: 16px;
+		background: #fff;
+		padding: 3px 6px;
+		border: 1px solid #cccccc;
+		width: 30px;
+		text-align: center;
+    
+		&:hover {
+			text-decoration: none;
+		}
 	}
 }
 
-h1 {
-	color: $background-color;
-	font-size: 48px;
-	font-weight: 300;
+@media(min-width: 1024px) {
+
+header {
+	padding: 40px 0;
 }
 
-.search-bar {
-	background: $color-grey;
+.logo {
+	width: 100px;
+	margin-top: 10px;
+}
+
+h1 {
+	font-size: 48px;
 }
 
 .searchForm {
@@ -86,27 +172,25 @@ h1 {
 
 	.query {
 		width: 90%;
-		float: left;
-		height: 47px;
-		color: darken($background-blue, 10);
-		font-weight: 300;
-		font-size: 18px;
-
-		&::-webkit-input-placeholder {
-		   color: #cccccc;
-		}
 	}
 
 	.search-button {
 		width: 10%;
+
+		span {
+			display: inline;
+		}
 	}
 }
 
-.desc {
-	margin: 15px 3px 0 3px;;
-    color: $background-color;
-    font-weight: 300;
-    font-size: 18px;
+.examples {
+	font-size: 24px;
+}
+
+
+.video-caption strong {
+	background-color: #ff0;
+    padding: 4px;
 }
 
 .search-result {
@@ -180,23 +264,7 @@ h1 {
 }
 
 
-.helper-keyboard {
-	padding: 15px 0;
 
-	a {
-		margin-right: 8px;
-		font-size: 16px;
-		background: #fff;
-		padding: 3px 6px;
-		border: 1px solid #cccccc;
-		width: 30px;
-		text-align: center;
-    
-		&:hover {
-			text-decoration: none;
-		}
-	}
-}
 
 .share-video {
 	margin: 35px 0;
@@ -219,28 +287,6 @@ h1 {
 	}
 }
 
-.country-flag {
-	width: 100%;
-	height: 10px;
-
-	.flag-third {
-		float: left;
-		width: 33.333%;
-		height: 10px;
-	}
-
-	.blue {
-		background: #000066;
-	}
-
-	.white {
-		background: #fff;
-	}
-
-	.red {
-		background: #d1081d;
-	}
-}
 
 .report-modal {
 	text-align: left;
@@ -274,4 +320,6 @@ h1 {
 	.coffeeDismiss {
 		margin-right: 10px;
 	}
+}
+	
 }
