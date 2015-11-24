@@ -121,6 +121,7 @@ footer {
 
     a {
     	margin-right: 8px;
+    	margin-bottom: 8px;
     	background: #ecedef;
 	    color: #333;
 	    font-size: 14px;
@@ -152,47 +153,6 @@ footer {
 	}
 }
 
-@media(min-width: 1024px) {
-
-header {
-	padding: 40px 0;
-}
-
-.logo {
-	width: 100px;
-	margin-top: 10px;
-}
-
-h1 {
-	font-size: 48px;
-}
-
-.searchForm {
-	padding: 35px 25px;
-
-	.query {
-		width: 90%;
-	}
-
-	.search-button {
-		width: 10%;
-
-		span {
-			display: inline;
-		}
-	}
-}
-
-.examples {
-	font-size: 24px;
-}
-
-
-.video-caption strong {
-	background-color: #ff0;
-    padding: 4px;
-}
-
 .search-result {
 	margin: 20px 0;
 
@@ -201,6 +161,11 @@ h1 {
 		font-weight: bold;
 		color: $heading-color;
 	}
+}
+
+.video-caption strong {
+	background-color: #ff0;
+    padding: 4px;
 }
 
 .caption {
@@ -218,21 +183,21 @@ h1 {
     font-style: italic;
 }
 
+iframe {
+	max-width: 100%;
+}
+
 .nav-container {
-	position: absolute;
-	top: 38%;
 	width: 100%;
 	font-size: 72px;
 }
 
 .nav-previous {
-	left: 15%;
-	position: absolute;
+	float:left;
 }
 
 .nav-next {
-	right: 15%;
-	position: absolute;
+	float:right;
 }
 
 .nav-bottom {
@@ -264,8 +229,6 @@ h1 {
 }
 
 
-
-
 .share-video {
 	margin: 35px 0;
 
@@ -286,7 +249,6 @@ h1 {
 		color: #55acee;
 	}
 }
-
 
 .report-modal {
 	text-align: left;
@@ -321,5 +283,59 @@ h1 {
 		margin-right: 10px;
 	}
 }
+
+@media(min-width: 1024px) {
+
+	header {
+		padding: 40px 0;
+	}
+
+	.logo {
+		width: 100px;
+		margin-top: 10px;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	.searchForm {
+		padding: 35px 25px;
+
+		.query {
+			width: 90%;
+		}
+
+		.search-button {
+			width: 10%;
+
+			span {
+				display: inline;
+			}
+		}
+	}
+
+	.examples {
+		font-size: 24px;
+	}
+
+	.nav-container {
+		position: absolute;
+		top: 38%;
+		width: 100%;
+		font-size: 72px;
+	}
+
+	.nav-previous {
+		left: 15%;
+		position: absolute;
+		float: none;
+	}
+
+	.nav-next {
+		right: 15%;
+		position: absolute;
+		float: none;
+	}
 	
 }
