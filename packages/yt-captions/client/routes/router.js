@@ -16,7 +16,8 @@ Router.map(function(){
             };
 
             Session.set("currentQuery", _self.params.q);
-
+            Session.get("currentCaption", 0);
+            
             return {
                 query: _self.params.q,
                 captions: YT.Captions.find({}, {transform: highlightKeyword})
