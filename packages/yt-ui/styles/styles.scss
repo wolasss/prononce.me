@@ -306,6 +306,12 @@ iframe {
 	margin-top: 55px;
 }
 
+.video-player {
+	.loading-container {
+		margin: 35px 0;
+	}
+}
+
 @media(min-width: 768px) {
 	.logo {
 		display: block;

@@ -22,6 +22,9 @@ Template.ytVideo.helpers({
 		var captions = Template.parentData(1).captions;
 
 		return Session.get("currentCaption") === captions.fetch().length - 1;
+	},
+	isPlayerReady: function() {
+		return yt.ready();
 	}
 });
 

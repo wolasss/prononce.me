@@ -1,17 +1,19 @@
 <template name="ytVideo">
 	{{#with currentCaption}}
 		<div class="video-player">
-			<div class="nav-container">
-				{{#unless isFirst}}
-					<a href="#"><i class="fa fa-angle-left nav-previous"></i></a>
-				{{/unless}}
-				{{#unless isLast}}
-					<a href="#"><i class="fa fa-angle-right nav-next"></i></a>
-				{{/unless}}
-			</div>
+			{{#if isPlayerReady}}
+				<div class="nav-container">
+					{{#unless isFirst}}
+						<a href="#"><i class="fa fa-angle-left nav-previous"></i></a>
+					{{/unless}}
+					{{#unless isLast}}
+						<a href="#"><i class="fa fa-angle-right nav-next"></i></a>
+					{{/unless}}
+				</div>
+			{{else}}
+				{{> ytLoading}}
+			{{/if}}
 			{{> YTPlayer name="player"}}
-			<!--<iframe width="640" height="360" class="iframe-video" src="https://www.youtube.com/embed/{{video}}?start={{getStartTime}}&autoplay=1&enablejsapi=1" frameborder="0" allowfullscreen></iframe>-->
-
 		</div>
 		<div class="video-caption">
 			“...{{{text}}}..”
