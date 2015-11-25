@@ -2,8 +2,8 @@ var yt = new YTPlayer("player", { 'autoplay': 1 });
 
 Template.ytVideo.rendered = function() {
 	var self = this;
+
 	Tracker.autorun(function () {
-		
 		if (yt.ready() && !isNaN(Session.get("currentCaption"))) {
 			var caption = self.data.captions.fetch()[Session.get("currentCaption")];
 			yt.player.loadVideoById(caption.video, parseInt(caption.start, 10));

@@ -16,7 +16,12 @@ Router.map(function(){
             var _self = this;
 
             var highlightKeyword = function(doc) {
-                doc.text = doc.text.replace(_self.params.q, "<strong>"+_self.params.q+"</strong>");
+                var query = _self.params.q;
+                var text = doc.text;
+                query = query.replace(/[\'\"]/gi, ""); //support phrases
+                
+                doc.text = doc.text.replace(query, "<strong>"+query+"</strong>");
+
                 return doc;
             };
 
