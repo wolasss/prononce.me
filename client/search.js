@@ -23,6 +23,7 @@ Template.ytSearch.events({
 
 		$input.val( currentVal.substring(0, caretPos) + c + currentVal.substring(caretPos) );
 		$input[0].selectionStart = $input[0].selectionEnd = caretPos + 1;
+		$input.focus();
 	}
 });
 
