@@ -20,7 +20,7 @@ Router.map(function(){
                 var text = doc.text;
                 query = query.replace(/[\'\"]/gi, ""); //support phrases
                 
-                doc.text = doc.text.replace(query, "<strong>"+query+"</strong>");
+                doc.text = doc.text.replace(new RegExp(query, "ig"), "<strong>"+query+"</strong>");
 
                 return doc;
             };
