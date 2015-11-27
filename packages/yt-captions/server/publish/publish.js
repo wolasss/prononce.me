@@ -3,5 +3,12 @@ Meteor.publish("captions", function(query){
 
 	query = "\""+query+"\"";
 
-	return YT_APP.Captions.find({$text: { $search: query, $language: "none" } });
+	return YT_APP.Captions.find({$text: { $search: query, $language: "none" } },{
+        fields: {
+            score: {$meta: "textScore"}
+        },
+        sort: {
+            score: {$meta: "textScore"}
+        }
+    });
 });
