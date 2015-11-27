@@ -20,7 +20,7 @@ var accents = [ {ch: "à", sub: "a"},
 
 YT_APP.NormalizeAccents = function(str) {
 	_.each(accents, function(a){
-		str = str.replace(a.ch, a.sub);
+		str = str.replace(new RegExp(a.ch, "ig"), a.sub);
 	});
 
 	return str;

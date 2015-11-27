@@ -13,6 +13,8 @@ Package.on_use(function (api) {
     api.add_files('client/model/events.js', 'client');
 
     api.add_files('server/model/model.js', 'server');
+    api.add_files('server/model/build_words.js', 'server');
+
     api.add_files('server/methods/methods.js', 'server');
     api.add_files('server/publish/publish.js', 'server');
 

@@ -1,7 +1,9 @@
 Meteor.publish("similarWords", function(query){
 	check(query, String);
 
-	var candidates = YT_APP.Words.find({normalized: new RegExp(query.slice(0, 2))});
+	query = YT_APP.NormalizeAccents(query);
+
+	var candidates = YT_APP.Words.find({normalized: new RegExp("(^"+query+"$|"+query.slice(0, 3)+"|"+query.slice(-3)+")")}, {fields: {"normalized": 1}, limit: 500});
 	var candidates_arr = candidates.fetch();
 
 	if(candidates_arr.length) {

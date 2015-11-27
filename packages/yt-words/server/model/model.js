@@ -1,4 +1,4 @@
-YT_APP.Words._ensureIndex( { text: "text" } );
+//YT_APP.Words._ensureIndex( { normalized: "text" }, { default_language: "none" } );
 
 var similarity = function(vec1, vec2) {
 	var similarity = 0;
