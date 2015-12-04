@@ -1,4 +1,5 @@
-var yt = new YTPlayer("player", { 'autoplay': 1 });
+YT_APP.yt = new YTPlayer("player", { 'autoplay': 1 });
+var yt = YT_APP.yt;
 
 Template.ytVideo.rendered = function() {
 	var self = this;
