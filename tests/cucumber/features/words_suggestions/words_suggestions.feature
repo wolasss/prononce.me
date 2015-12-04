@@ -1,6 +1,5 @@
 Feature: Words suggestions
     
-    @watch
   	Scenario: User see suggestions
     	Given I have visited home page
     	Then the search bar should be visible
