@@ -1,0 +1,11 @@
+dependencies:
+  override:
+    # Install Meteor
+    - curl https://install.meteor.com | sh
+
+test:
+  override:
+    # Run tests in Velocity CI Mode
+    - meteor --test:
+        environment:
+          VELOCITY_CI: true
