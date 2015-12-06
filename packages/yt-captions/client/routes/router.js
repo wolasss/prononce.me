@@ -10,6 +10,7 @@ Router.map(function(){
         onBeforeAction: function() {
             Session.set("currentCaption", 0);
             Session.set("currentQuery", this.params.q);
+            GAnalytics.pageview();
             this.render();
         },
         data: function() {

@@ -5,7 +5,7 @@ Package.describe({
 Package.on_use(function (api) {
     var both = ['client', 'server'];
     api.use(['iron:router', 'yt-videos'], 'client');
-    api.use(['yt', 'tap:i18n', 'mongo', 'underscore', 'audit-argument-checks'], both);
+    api.use(['yt', 'tap:i18n', 'mongo', 'underscore', 'audit-argument-checks', 'datariot:ganalytics'], both);
 
     api.add_files('common/model/model.js', both);
     api.add_files('client/routes/router.js', 'client');
