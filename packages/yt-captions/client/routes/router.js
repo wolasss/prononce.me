@@ -11,6 +11,14 @@ Router.map(function(){
             Session.set("currentCaption", 0);
             Session.set("currentQuery", this.params.q);
             GAnalytics.pageview();
+
+            SEO.set({
+                title: TAPi18n.__("seo.word.title", {word: this.params.q}),
+                meta: {
+                    'description': TAPi18n.__("seo.word.desc", {word: this.params.q})
+                }
+            });
+
             this.render();
         },
         data: function() {

@@ -13,5 +13,15 @@
 		"githublink": "Source code is hosted on github: ",
 		"paypallink": "And here you can buy us a coffee: ",
 		"dismiss": "It's sweet and all, but don't show me this again."
+	},
+	"seo": {
+		"global": {
+			"title": "How to pronounce it in french?",
+			"desc": "Use YouTube to improve your French pronunciation. Real people, real situations, easy and fun to use."
+		},
+		"word": {
+			"title": "How to pronounce \"__word__\" in french ?",
+			"desc": "Check out how to pronounce \"__word__\" in french. Learn french pronunciation with youtube videos for free"
+		}
 	}
 }
