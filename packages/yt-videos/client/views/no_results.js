@@ -1,5 +1,11 @@
 Template.ytNoResults.created = function () {
-	this.subscribe("similarWords", YT_APP.NormalizeAccents(Router.current().params.q));
+	var words = this.subscribe("similarWords", YT_APP.NormalizeAccents(Router.current().params.q));
+
+	this.autorun(function(){
+		if(words.ready()) {
+			Meteor.isReadyForSpiderable = true;
+		}
+	})
 };
 
 Template.ytNoResults.helpers({

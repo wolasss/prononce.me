@@ -48,6 +48,7 @@ iron:location@1.0.11
 iron:middleware-stack@1.0.11
 iron:router@1.0.12
 iron:url@1.0.11
+jazeee:spiderable-longer-timeout@1.2.12
 jquery@1.11.4
 launch-screen@1.0.4
 less@2.5.1
@@ -69,6 +70,7 @@ npm-mongo@1.4.39_1
 numtel:template-from-string@0.1.0
 observe-sequence@1.0.7
 ordered-dict@1.0.4
+ostrio:meteor-root@1.0.2
 package-version-parser@3.0.4
 practicalmeteor:chai@1.9.2_3
 practicalmeteor:loglevel@1.1.0_3

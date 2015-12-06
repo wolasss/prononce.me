@@ -3,6 +3,8 @@ var yt = YT_APP.yt;
 
 Template.ytVideo.rendered = function() {
 	var self = this;
+	
+	Meteor.isReadyForSpiderable = true;
 
 	Tracker.autorun(function () {
 		if (yt.ready() && !isNaN(Session.get("currentCaption"))) {

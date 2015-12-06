@@ -1,3 +1,4 @@
 Router.configure({
-	loadingTemplate: 'ytLoading'
+	loadingTemplate: 'ytLoading',
+	notFoundTemplate: "_404"
 });

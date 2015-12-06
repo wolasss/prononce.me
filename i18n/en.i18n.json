@@ -6,6 +6,7 @@
 	"about": "About",
 	"donate": "Donate",
 	"see_examples": "For example: ",
+	"404_not_found": "The page you are looking for does not exists. ",
 	"coffee": {
 		"title": "This app is free",
 		"desc": "And it always will! It was created in our free time, so if you enjoy it you can always buy us a coffee or contribute to the development.",
