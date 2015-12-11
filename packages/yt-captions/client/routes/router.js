@@ -39,7 +39,7 @@ Router.map(function(){
                 captions: YT_APP.Captions.find({}, {transform: highlightKeyword})
             };
         },
-        path: '/pronounce/:q',
+        path: '/prononciation/:q',
         layoutTemplate: 'ytLayout',
         template: 'ytVideoList',
         yieldTemplates: {

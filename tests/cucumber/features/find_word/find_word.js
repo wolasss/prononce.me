@@ -24,7 +24,7 @@ module.exports = function() {
 	});
 
 	this.Then(/^I should be redirected to a result page$/, function () {
-		expect(client.url().value).toMatch(/pronounce\/[^\/]+$/ig);
+		expect(client.url().value).toMatch(/prononciation\/[^\/]+$/ig);
 	});
 
 	this.Then(/^the video should be available$/, function () {

@@ -1,7 +1,7 @@
 module.exports = function() {
 
 	this.Given(/^I have visited page with "([^"]*)" word$/, function (word) {
-		client.url(process.env.ROOT_URL+"pronounce/"+word);
+		client.url(process.env.ROOT_URL+"prononciation/"+word);
 	});
 
 	this.Then(/^captcha should be visible$/, function () {
