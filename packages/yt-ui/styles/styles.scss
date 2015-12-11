@@ -211,6 +211,7 @@ iframe {
 
 .nav-bottom {
 	margin: 35px 0;
+	margin-bottom: 100px;
 	font-size: 36px;
 
 	a {
@@ -295,17 +296,16 @@ iframe {
 
 .share-links {
 	position: absolute;
-	right: 0;
-	color: #fff;
-    top: -55px;
     text-align: center;
     width: 100%;
+    bottom: 35px;
 
 	a {
-		color: #fff;
-		box-shadow: 0 10px 10px -10px rgba(255,255,255,.4);
+		color: #000;
+		opacity: 0.2;
 		&:hover {
-			box-shadow: 0 10px 10px -10px rgba(255,255,255,1);
+			color: #066da0;
+			opacity: 1;
 		}
 	}
 }
@@ -375,12 +375,6 @@ iframe {
 		right: 15%;
 		position: absolute;
 		float: none;
-	}
-
-	.share-links {
-		top: -30px;
-		width: auto;
-		text-align: left;
 	}
 
 	.logo-container {
