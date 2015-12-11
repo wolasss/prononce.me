@@ -23,5 +23,12 @@
 			"title": "How to pronounce \"__word__\" in french ?",
 			"desc": "Check out how to pronounce \"__word__\" in french. Learn french pronunciation with youtube videos for free"
 		}
+	},
+	"home": "Home",
+	"aboutpage": {
+		"title": "About the site",
+		"p1": "Free and easy way to check out how to pronounce french words, names and sentences. For now we support more than 40k different words, but we are improving that number all the time. Please mind that this is a beta version, there are still lot of videos that should not be here for different reasons, if you find some, please use the 'report' function. ",
+		"p2": "If you want to contact us, feel free to send e-mail to: ",
+		"p3": "If you want to contribute, please click on the coffee sign in the bottom right corner to get more details."
 	}
 }
