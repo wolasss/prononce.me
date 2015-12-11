@@ -5,5 +5,23 @@
 	"search": "Dis ça!",
 	"about": "About",
 	"donate": "Donate",
-	"see_examples": "Par example: "
+	"see_examples": "Par example: ",
+	"404_not_found": "La page n'est pas trouvée. ",
+	"coffee": {
+		"title": "Cette app est gratuit",
+		"desc": "Et elle sera toujours comme ça! Mais, elle a été créée pendant notre temps libre donc si vous l'appréciez, vous pouvez nous acheter un café ou contribuer au développement.",
+		"githublink": "Vous pouvez trouver le code source sur github: ",
+		"paypallink": "Et ici, vous pourriez nous acheter un café: ",
+		"dismiss": "Je n'en veux pas. Ne me montrez pas ça encore."
+	},
+	"seo": {
+		"global": {
+			"title": "Comment ça se prononce en français ?",
+			"desc": "Utilisez youtube pour apprendre la pronnonciation française, c'est gratuit, c'est pratique, c'est chic."
+		},
+		"word": {
+			"title": "Comment \"__word__\" se prononce en français ?",
+			"desc": "Vérifiez comment \"__word__\" se prononce en français. La prononciation de mot \"__word__\" et les autres. Utilisez youtube pour apprendre la pronnonciation française, c'est gratuit"
+		}
+	}
 }

@@ -1,6 +1,9 @@
 Template.ytReportModal.helpers({
 	getSchema: function() {
 		return YT_APP.ReportsSchema;
+	},
+	getSubmitButtonTranslation: function() {
+		return TAPi18n.__("send");
 	}
 });
 
