@@ -13,6 +13,7 @@ Template.ytFooter.events({
 	},
 	'click .lang-picker a': function(e) {
 		var lang  = $(e.currentTarget).attr('data-lang');
+		ReactiveStore.set("ytLang", lang);
 		TAPi18n.setLanguage(lang);
 	}
 });

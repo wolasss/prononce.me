@@ -1,5 +1,5 @@
 var getUserLanguage = function () {
-  return "en";
+  return ReactiveStore.get("ytLang") || "fr";
 };
 
 
