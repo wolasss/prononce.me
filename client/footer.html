@@ -9,15 +9,10 @@
 				<span class="pull-right lang-picker">
 					<a href="#" data-lang="fr" class="{{#if isActiveLang 'fr'}}active{{/if}}">{{_ "french"}}</a>
 					<a href="#" data-lang="en" class="{{#if isActiveLang 'en'}}active{{/if}}">{{_ "english"}}</a>
-
-					{{#unless hideCoffee}}
-						<a href="#donateModal" class="donate" data-toggle="modal"><i class="fa fa-coffee"></i></a>
-					{{/unless}}
+					<a href="#donateModal" class="donate" data-toggle="modal"><i class="fa fa-coffee"></i></a>
 				</span>
 			</div>
 		</div>
 	</div>
-	{{#unless hideCoffee}}
-		{{> ytDonateModal}}
-	{{/unless}}
+	{{> ytDonateModal}}
 </template>
