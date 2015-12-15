@@ -6,13 +6,13 @@
 	"about": "À Propos",
 	"donate": "Donate",
 	"see_examples": "Par example: ",
-	"404_not_found": "La page n'est pas trouvée. ",
+	"404_not_found": "Page introuvable. ",
 	"coffee": {
-		"title": "Cette app est gratuit",
-		"desc": "Et elle sera toujours comme ça! Mais, elle a été créée pendant notre temps libre donc si vous l'appréciez, vous pouvez nous acheter un café ou contribuer au développement.",
+		"title": "Cette application est gratuite",
+		"desc": "Et elle le restera toujours! Mais, elle a été créée pendant notre temps libre donc si vous l'appréciez, vous pouvez nous acheter un café ou contribuer au développement.",
 		"githublink": "Vous pouvez trouver le code source sur github: ",
 		"paypallink": "Et ici, vous pourriez nous acheter un café: ",
-		"dismiss": "Je n'en veux pas. Ne me montrez pas ça encore."
+		"dismiss": "Je ne veux pas. Ne me le montrez plus."
 	},
 	"seo": {
 		"global": {
@@ -21,14 +21,14 @@
 		},
 		"word": {
 			"title": "Comment \"__word__\" se prononce en français ?",
-			"desc": "Vérifiez comment \"__word__\" se prononce en français. La prononciation de mot \"__word__\" et les autres. Utilisez youtube pour apprendre la pronnonciation française, c'est gratuit"
+			"desc": "Vérifiez comment \"__word__\" se prononce en français. Prononciation du mot \"__word__\". Utilisez youtube pour apprendre la pronnonciation française gratuitement."
 		}
 	},
 	"home": "Home",
 	"aboutpage": {
 		"title": "À Propos",
-		"p1": "Gratuit et facile façon pour vérifier comment des mots, noms et phrases français se prononcent. Dans ce moment, nous soutenons plus de 40k mots différents, mais ça améliore tout le temps. Veuillez garder à l'esprit que c'est la version bêta et il y a encore beaucoup de vidéos et de sous-titres qui sont fausses, si vous en trouvez, vous pourriez utiliser la fonction de rapport. ",
-		"p2": "Si vous voulez nous contacter, vous pouvez envoyer un e-mail à: ",
-		"p3": "Si vous voulez contribuer, s'il vous plaît cliquez sur le signe de café dans le coin en bas à droite pour obtenir plus de détails."
+		"p1": "Gratuit et facile d'utilisation, prononce.me vous permet de vérifier comment des mots, des noms et des phrases français se prononcent. Actuellement, nous avons plus de 40 000 mots différents, mais nous travaillons à améliorer le base de données. Nous nous excusons d'avance si il y a quelques erreurs de sous titre mais nous sommes encore dans une version beta. Si vous en trouvez, n'hésitez pas à nous les signaler",
+		"p2": "Si vous voulez nous contacter, vous pouvez nous envoyer un e-mail à: ",
+		"p3": "Si vous voulez contribuer, n'hésitez pas à cliquer sur le signe du café en bas à droite."
 	}
 }

@@ -1,14 +1,14 @@
 {
-	"what_issue": "Qu'est-ce que c'est le problème?",
-	"send": "Envoyez",
-	"comment": "Commentaire optionnel",
-	"issue_not_lang": "Ce vidéo n'est pas en français",
-	"issue_captions" : "Les sous-titres sont inexactes.",
+	"what_issue": "Aidez-nous à comprendre ce qui se passe",
+	"send": "Envoyer",
+	"commànt": "Commentaire optionnel",
+	"issue_not_lang": "Cette vidéo n'est pas en français",
+	"issue_captions" : "Les sous-titres sont inexacts.",
 	"issue_sound" : "La qualité de son est mauvaise",
 	"issue_video" : "La qualité de vidéo est mauvaise",
-	"issue_does_not_work": "Vidéo ne marche pas",
-	"issue_shocking" : "Le contenu est choquant",
+	"issue_does_not_work": "La vidéo ne marche pas",
+	"issue_shocking" : "Le contenu est indésirable ou choquant",
 	"bot_verification": "Confirmez que vous n'êtes pas un robot",
-	"wrong_captcha": "Invalide captcha",
+	"wrong_captcha": "Captcha invalide",
 	"thanks_contribution": "Merci pour votre contribution"
 }
