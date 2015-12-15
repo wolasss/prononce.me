@@ -2,7 +2,7 @@ Template.ytShareLinks.events({
 	'click .share-facebook': function(){
 		FB.ui({
 			method: 'share',
-			href: window.location.href,
+			href: "http://prononce.me"+window.location.pathname,
 		}, function(response){});
 	}
 });
