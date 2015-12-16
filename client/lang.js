@@ -5,6 +5,7 @@ Tracker.autorun(function(){
 		title: TAPi18n.__("seo.global.title"),
 		meta: {
 		  'description': TAPi18n.__("seo.global.desc")
-		}
+		},
+		url: "http://prononce.me"
 	});
 });

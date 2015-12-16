@@ -16,7 +16,8 @@ Router.map(function(){
                 title: TAPi18n.__("seo.word.title", {word: this.params.q}),
                 meta: {
                     'description': TAPi18n.__("seo.word.desc", {word: this.params.q})
-                }
+                },
+                url: "http://prononce.me"
             });
 
             this.render();
