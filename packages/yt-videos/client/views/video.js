@@ -46,6 +46,9 @@ Template.ytVideo.events({
 			yt.player.playVideo();
 		}
 	},
+	'click .nav-report': function() {
+		if(grecaptcha && grecaptcha.reset) grecaptcha.reset();
+ 	},
 	'click .nav-backward': function() {
 		if(yt.player) {
 			yt.player.seekTo(yt.player.getCurrentTime()-5);
