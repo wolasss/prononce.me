@@ -327,6 +327,12 @@ iframe {
 	}
 }
 
+.nav-icon {
+	&:hover i {
+		color: $background-blue;
+	}
+}
+
 @media(min-width: 768px) {
 	.logo {
 		display: block;
