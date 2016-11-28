@@ -30,7 +30,8 @@ dependencies:
 test:
   override:
     # Run tests in Velocity CI Mode
-    - meteor npm run test
+    - meteor npm run test:
+      background: true
     - meteor npm run chimp-test:
         environment:
           CUCUMBER_SCREENSHOTS_DIR: "$CIRCLE_ARTIFACTS/screenshots/chrome"
