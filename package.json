@@ -1,0 +1,30 @@
+{
+  "name": "prononce.me",
+  "version": "1.0.0",
+  "description": "App for finding french pronounciation",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.18.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wolasss/prononce.me.git"
+  },
+  "author": "Adam Wolski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wolasss/prononce.me/issues"
+  },
+  "homepage": "https://github.com/wolasss/prononce.me#readme",
+  "scripts": {
+    "test": "meteor test --full-app --driver-package tmeasday:acceptance-test-driver",
+    "chimp-test": "chimp --ddp=http://localhost:3000 --watch --path=tests"
+  }
+}

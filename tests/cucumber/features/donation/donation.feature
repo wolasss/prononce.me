@@ -1,5 +1,5 @@
 Feature: Donation possibilities for users
-	
+
   	Scenario: User donates
     	Given I have visited home page
     	Then the coffee button should be visible
