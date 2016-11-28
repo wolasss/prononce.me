@@ -1,6 +1,8 @@
 machine:
   java:
     version: oraclejdk8
+  node:
+    version: 5.12.0
 
   environment:
     VELOCITY_CI: true
@@ -22,6 +24,7 @@ dependencies:
     - if [ -d ~/.meteor ]; then sudo ln -s ~/.meteor/meteor /usr/local/bin/meteor; fi
     # Install Meteor if the cache didn't restore it
     - if [ ! -e ~/.meteor/meteor ]; then curl https://install.meteor.com | sh; fi
+    - meteor npm install --save babel-runtime
 
 
 test:
