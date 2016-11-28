@@ -13,10 +13,10 @@ dependencies:
   override:
     # Update to the latest chrome
     - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    - sudo sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+    - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
     - sudo apt-get update
     - sudo apt-get install google-chrome-stable
-    - sudo npm install -g chimp
+    - npm install -g chimp
 
     # Restore the meteor symlink   
     - if [ -d ~/.meteor ]; then sudo ln -s ~/.meteor/meteor /usr/local/bin/meteor; fi
@@ -27,7 +27,8 @@ dependencies:
 test:
   override:
     # Run tests in Velocity CI Mode
-    - meteor --test:
+    - meteor npm run test
+    - meteor npm run chimp-test:
         environment:
           CUCUMBER_SCREENSHOTS_DIR: "$CIRCLE_ARTIFACTS/screenshots/chrome"
           CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/chrome.cucumber"
