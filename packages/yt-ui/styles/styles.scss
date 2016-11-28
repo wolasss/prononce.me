@@ -1,17 +1,17 @@
 @import "font-awesome/font-awesome";
 @import "variables";
-@import "buttons";
-@import "forms";
+@import "_buttons";
+@import "_forms";
 
 html {
 	width: 100%;
 	height: 100%;
 }
 
-body { 
+body {
 	min-height: 100%;
 	position: relative;
-	margin: 0; 
+	margin: 0;
 	padding: 0;
 	font-family: $font-stack;
 	background: $background-color;
@@ -26,16 +26,19 @@ body {
 	display: none;
 	width: 75px;
 	float: left;
-    margin-right: 15px;
+	margin-right: 15px;
 }
 
 header {
 	padding: 20px 0;
 	background: $background-blue;
 
-	a:hover, a:active, a:focus {
+	a:hover,
+	a:active,
+	a:focus {
 		text-decoration: none;
 	}
+
 }
 
 h1 {
@@ -45,12 +48,11 @@ h1 {
 }
 
 .desc {
-	margin: 15px 3px 0 3px;;
-    color: $background-color;
-    font-weight: 300;
-    font-size: 18px;
+	margin: 15px 3px 0 3px;
+	color: $background-color;
+	font-weight: 300;
+	font-size: 18px;
 }
-
 
 .country-flag {
 	width: 100%;
@@ -73,6 +75,7 @@ h1 {
 	.red {
 		background: #d1081d;
 	}
+
 }
 
 .search-bar {
@@ -91,8 +94,9 @@ h1 {
 		font-size: 18px;
 
 		&::-webkit-input-placeholder {
-		   color: #cccccc;
+			color: #cccccc;
 		}
+
 	}
 
 	.search-button {
@@ -101,9 +105,10 @@ h1 {
 		span {
 			display: none;
 		}
-	}
-}
 
+	}
+
+}
 
 footer {
 	background: $color-grey;
@@ -112,31 +117,33 @@ footer {
 	position: absolute;
 	bottom: 0;
 	padding: 6px 0;
-    font-size: 12px;
+	font-size: 12px;
 
-    a {
-    	margin-right: 5px;
-    }
+	a {
+		margin-right: 5px;
+	}
+
 }
-
 
 .examples {
 	padding-top: 25px;
-    font-size: 14px;
+	font-size: 14px;
 
-    a {
-    	margin-right: 8px;
-    	margin-bottom: 8px;
-    	background: #ecedef;
-	    color: #333;
-	    font-size: 14px;
-	    padding: 6px 10px;
+	a {
+		margin-right: 8px;
+		margin-bottom: 8px;
+		background: #ecedef;
+		color: #333;
+		font-size: 14px;
+		padding: 6px 10px;
 
-	    &:hover {
-	    	color: $background-blue;
-	    	text-decoration: none;
-	    }
-    }
+		&:hover {
+			color: $background-blue;
+			text-decoration: none;
+		}
+
+	}
+
 }
 
 .helper-keyboard {
@@ -151,11 +158,13 @@ footer {
 		border: 1px solid #cccccc;
 		width: 30px;
 		text-align: center;
-    
+
 		&:hover {
 			text-decoration: none;
 		}
+
 	}
+
 }
 
 .about h1 {
@@ -176,12 +185,13 @@ footer {
 	.alert {
 		margin: 15px 0;
 	}
+
 }
 
 .video-caption strong {
 	background-color: #ff0;
-    padding: 4px;
-    margin: 0 6px;
+	padding: 4px;
+	margin: 0 6px;
 }
 
 .caption {
@@ -195,8 +205,8 @@ footer {
 
 .video-caption {
 	font-size: 26px;
-    font-weight: 300;
-    font-style: italic;
+	font-weight: 300;
+	font-style: italic;
 }
 
 iframe {
@@ -209,11 +219,11 @@ iframe {
 }
 
 .nav-previous {
-	float:left;
+	float: left;
 }
 
 .nav-next {
-	float:right;
+	float: right;
 }
 
 .nav-bottom {
@@ -224,11 +234,12 @@ iframe {
 	a {
 		margin-right: 20px;
 		margin-right: 20px;
-    	background: #eaebec;
-    	border: 1px solid #cccccc;
-    	padding: 5px 10px;
-    	color: #333;
+		background: #eaebec;
+		border: 1px solid #cccccc;
+		padding: 5px 10px;
+		color: #333;
 	}
+
 }
 
 .stage-icon {
@@ -237,14 +248,13 @@ iframe {
 
 .stage-icon-desc {
 	display: inline-block;
-    position: absolute;
-    bottom: -30%;
-    left: 0;
-    text-align: center;
-    font-size: 12px;
-    width: 100%;
+	position: absolute;
+	bottom: -30%;
+	left: 0;
+	text-align: center;
+	font-size: 12px;
+	width: 100%;
 }
-
 
 .share-video {
 	margin: 35px 0;
@@ -265,6 +275,7 @@ iframe {
 	.share-twitter {
 		color: #55acee;
 	}
+
 }
 
 .report-modal {
@@ -281,11 +292,12 @@ iframe {
 
 .donate {
 	color: #333;
-    opacity: 0.4;
+	opacity: 0.4;
 
-    &:hover {
-    	opacity: 1;
-    }
+	&:hover {
+		opacity: 1;
+	}
+
 }
 
 .donate-modal {
@@ -293,28 +305,32 @@ iframe {
 
 	.modal-title {
 		color: #066da0;
-    	margin-bottom: 10px;
+		margin-bottom: 10px;
 	}
 
 	.coffeeDismiss {
 		margin-right: 10px;
 	}
+
 }
 
 .share-links {
 	position: absolute;
-    text-align: center;
-    width: 100%;
-    bottom: 35px;
+	text-align: center;
+	width: 100%;
+	bottom: 35px;
 
 	a {
 		color: #000;
 		opacity: 0.2;
+
 		&:hover {
 			color: #066da0;
 			opacity: 1;
 		}
+
 	}
+
 }
 
 .logo-container {
@@ -325,24 +341,26 @@ iframe {
 	.loading-container {
 		margin: 35px 0;
 	}
+
 }
 
 .nav-icon {
 	&:hover i {
 		color: $background-blue;
 	}
+
 }
 
-@media(min-width: 768px) {
+@media(min-width:768px) {
 	.logo {
 		display: block;
 		width: 100px;
 		margin-top: 10px;
 	}
+
 }
 
-@media(min-width: 1024px) {
-
+@media(min-width:1024px) {
 	header {
 		padding: 40px 0;
 	}
@@ -364,7 +382,9 @@ iframe {
 			span {
 				display: inline;
 			}
+
 		}
+
 	}
 
 	.examples {
@@ -393,5 +413,5 @@ iframe {
 	.logo-container {
 		margin-top: 0;
 	}
-	
+
 }
