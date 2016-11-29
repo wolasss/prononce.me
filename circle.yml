@@ -31,6 +31,7 @@ dependencies:
 test:
   override:
     # Run tests in Velocity CI Mode
+    - chimp
     - meteor npm run test:
         background: true
     - meteor npm run chimp-test:
