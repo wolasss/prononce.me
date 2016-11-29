@@ -13,8 +13,6 @@ dependencies:
     - "~/.npm"
 
   override:
-    # Update to the latest firefox
-    - sudo apt-get install firefox
     - npm install selenium-standalone@latest -g
     - npm install -g chimp
 
