@@ -37,5 +37,4 @@ test:
           CUCUMBER_SCREENSHOTS_DIR: "$CIRCLE_ARTIFACTS/screenshots/chrome"
           CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/chrome.cucumber"
           SELENIUM_BROWSER: chrome
-    - mkdir -p $CIRCLE_ARTIFACTS/chrome
-    - cp .meteor/local/log/*.log $CIRCLE_ARTIFACTS/chrome
+          CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/cucumber/chrome.cucumber"
