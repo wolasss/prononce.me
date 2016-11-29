@@ -31,7 +31,7 @@ dependencies:
 test:
   override:
     # Run tests in Velocity CI Mode
-    - chimp --ddp=http://localhost:3000 --path=tests --jsonOutput=$CIRCLE_TEST_REPORTS/chrome.cucuber:
+    - meteor npm run test:
         background: true
     - meteor npm run chimp-test:
         environment:

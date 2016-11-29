@@ -25,6 +25,6 @@
   "homepage": "https://github.com/wolasss/prononce.me#readme",
   "scripts": {
     "test": "meteor test --full-app --driver-package tmeasday:acceptance-test-driver",
-    "chimp-test": "chimp --ddp=http://localhost:3000 --path=tests"
+    "chimp-test": "chimp --ddp=http://localhost:3000 --path=tests --jsonOutput=$CIRCLE_TEST_REPORTS/chrome.cucuber"
   }
 }
