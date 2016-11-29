@@ -13,11 +13,8 @@ dependencies:
     - "~/.npm"
 
   override:
-    # Update to the latest chrome
-    - wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-    - sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
-    - sudo apt-get update
-    - sudo apt-get install google-chrome-stable
+    # Update to the latest firefox
+    - sudo apt-get install firefox
     - npm install selenium-standalone@latest -g
     - npm install -g chimp
 
@@ -36,7 +33,7 @@ test:
         background: true
     - meteor npm run chimp-test:
         environment:
-          CUCUMBER_SCREENSHOTS_DIR: "$CIRCLE_ARTIFACTS/screenshots/chrome"
-          CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/chrome.cucumber"
-          SELENIUM_BROWSER: chrome
-          CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/cucumber/chrome.cucumber"
+          CUCUMBER_SCREENSHOTS_DIR: "$CIRCLE_ARTIFACTS/screenshots/firefox"
+          CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/firefox.cucumber"
+          SELENIUM_BROWSER: firefox
+          CUCUMBER_JSON_OUTPUT: "$CIRCLE_TEST_REPORTS/cucumber/firefox.cucumber"
