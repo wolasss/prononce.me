@@ -19,7 +19,7 @@ module.exports = function() {
 		client.waitForVisible(".has-error [data-schema-key='" + field + "']");
 	});
 
-	this.When(/^I choose "([^"]*)" option from "([^"]*)" field$/, function(val) {
+	this.When(/^I choose "([^"]*)" option from "([^"]*)" field$/, function(val, val2) {
 		client.waitForExist("[value='" + val + "']");
 		client.click("[value='" + val + "']");
 	});

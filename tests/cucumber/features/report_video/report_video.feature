@@ -1,5 +1,5 @@
 Feature: Report video
-    @watch
+
   	Scenario: User cant report a video when not providing all necessary fields
     	Given I have visited page with "amazing" word
     	Then the navigation buttons should be available
