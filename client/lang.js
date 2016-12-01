@@ -1,11 +1,11 @@
-Tracker.autorun(function(){
+Tracker.autorun(function() {
 	var lang = TAPi18n.getLanguage();
-	
+
 	SEO.set({
 		title: TAPi18n.__("seo.global.title"),
 		meta: {
-		  'description': TAPi18n.__("seo.global.desc")
+			'description': TAPi18n.__("seo.global.desc")
 		},
-		url: "http://prononce.me"
+		url: "https://prononce.me"
 	});
 });

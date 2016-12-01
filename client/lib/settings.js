@@ -9,14 +9,14 @@ Meteor.startup(function() {
     meta: {
       'description': 'Utilisez YouTube pour améliorer votre l\'accent français. De vraies personnes, des situations réelles, facile et amusant à utiliser. C\'est chic!'
     },
-    url: "http://prononce.me",
+    url: "https://prononce.me",
     og: {
       'title': "Comment ça se prononce en français ?",
       'description': "Utilisez YouTube pour améliorer votre l'accent français. De vraies personnes, des situations réelles, facile et amusant à utiliser. C'est chic!",
       'type': "website",
-      'url': "http://prononce.me",
+      'url': "https://prononce.me",
       'locale': "fr",
-      'image': 'http://adamwolski.com/og-image-prononce-me.jpg'
+      'image': 'https://adamwolski.com/og-image-prononce-me.jpg'
     },
     auto: {
       twitter: true,
