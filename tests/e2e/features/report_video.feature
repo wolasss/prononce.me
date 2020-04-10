@@ -2,7 +2,7 @@ Feature: Report video
 
   	Scenario: User cant report a video when not providing all necessary fields
     	Given I have visited page with "amazing" word
-    	Then the navigation buttons should be available
+    	Then I should see ".nav-bottom"
         When user click button "report"
         Then the modal should open
         And captcha should be visible

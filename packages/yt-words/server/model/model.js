@@ -27,7 +27,7 @@ var similarity = function(vec1, vec2) {
 	}
 
 	vec2_length = Math.sqrt(vec2_length);
-	
+
 	if(vec1_length === 0 || vec2_length === 0) {
 		return 0;
 	}
@@ -38,7 +38,6 @@ var similarity = function(vec1, vec2) {
 };
 
 YT_APP.WordsComparison = {
-
 	buildVectors: function(s1, s2) {
 		var joined = s1+s2;
 		var union = _.unique(joined).sort();

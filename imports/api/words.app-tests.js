@@ -21,7 +21,7 @@ Meteor.methods({
 		return YT_APP.Words.remove({});
 	},
 	'fixtures/loadTestWords': function() {
-		_.each(mock_words, function(cap) {
+		mock_words.forEach(function(cap) {
 			YT_APP.Words.insert(cap);
 		});
 

@@ -1,5 +1,5 @@
 Feature: Find word in some youtube videos
-	
+
   	Scenario: Find word in one youtube video
     	Given I have visited home page
     	Then the search bar should be visible

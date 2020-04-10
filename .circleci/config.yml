@@ -1,0 +1,69 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~
+    docker:
+      - image: circleci/node:12.14.1-buster-browsers
+    steps:
+      - checkout
+      - run:
+          name: "Pull Submodules"
+          command: |
+            git submodule init
+            git submodule update --remote
+      - restore_cache:
+          key: v5-dependency-cache-{{ checksum "package.json" }}
+      - restore_cache:
+          name: Restore Meteor Cache
+          key: v5-meteor-cache-{{ checksum ".meteor/release" }}
+      - restore_cache:
+          name: Restore Meteor Package Cache
+          key: v5-packages-cache-{{ checksum ".meteor/versions" }}
+      - run:
+          name: create selenium log
+          command: mkdir test-reports && touch selenium.log
+      - run:
+          name: install meteor
+          command: curl https://install.meteor.com/ | sh
+      - run:
+          name: install npm packages
+          command: npm install
+      - run:
+          name: install-node-stubs
+          command: meteor npm install --save meteor-node-stubs
+      - run:
+          name: Download Selenium
+          command: curl -O http://selenium-release.storage.googleapis.com/3.5/selenium-server-standalone-3.5.3.jar
+      - run:
+          name: Start Selenium
+          command: java -jar selenium-server-standalone-3.5.3.jar -log test-reports/selenium.log
+          background: true
+      - save_cache:
+          key: v5-dependency-cache-{{ checksum "package.json" }}
+          paths:
+            - ./node_modules
+      - save_cache:
+          name: save meteor release cache
+          key: v5-meteor-cache-{{ checksum ".meteor/release" }}
+          paths:
+            - '~/.meteor'
+      - run:
+          name: rebuild packages
+          command: meteor rebuild
+      - save_cache:
+          name: save meteor packages cache
+          key: v5-packages-cache-{{ checksum ".meteor/versions" }}
+          paths:
+            - './.meteor/local/build'
+            - './.meteor/local/bundler-cache'
+            - './.meteor/local/isopacks'
+            - './.meteor/local/plugin-cache'
+      - run:
+          name: test
+          command: npm run ci:e2e
+          environment:
+              METEOR_ALLOW_SUPERUSER: true
+      - store_artifacts:
+          path: ./test-reports/selenium.log
+      - store_test_results:
+          path: tests/e2e/reports

@@ -16,8 +16,7 @@ Package.on_use(function(api) {
 		'styles/font-awesome/_mixins.scss',
 		'styles/font-awesome/_path.scss',
 		'styles/font-awesome/_rotated-flipped.scss',
-		'styles/font-awesome/_stacked.scss',
-		'styles/font-awesome/_variables.scss'
+		'styles/font-awesome/_stacked.scss'
 	], 'client', {
 		isImport: true
 	});

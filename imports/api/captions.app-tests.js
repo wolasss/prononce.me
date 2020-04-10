@@ -27,7 +27,7 @@ Meteor.methods({
     return YT_APP.Captions.remove({});
   },
   'fixtures/loadTestCaptions': function() {
-    _.each(mock_captions, function(cap) {
+    mock_captions.forEach(function(cap) {
       YT_APP.Captions.insert(cap);
     });
 
