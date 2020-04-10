@@ -1,6 +1,6 @@
 import { When } from 'cucumber';
 
-const timeout = 10000;
+const timeout = 20000;
 
 When(/^I click on the coffee button$/, function() {
     const el = browser.$('.fa-coffee');
@@ -29,7 +29,10 @@ When(/^I click on "([^"]*)"$/, function(selector) {
 When(/^I choose "([^"]*)" option from "([^"]*)" field$/, function(val, val2) {
     const el = browser.$("[value='" + val + "']");
 
-    el.waitForExist("[value='" + val + "']");
+    el.waitForExist({timeout});
+    el.waitForDisplayed({timeout});
+    el.waitForClickable({timeout});
+
     el.click();
 });
 

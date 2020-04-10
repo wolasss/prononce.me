@@ -2,7 +2,8 @@ import { Then } from 'cucumber';
 import chai from 'chai';
 
 const expect = chai.expect;
-const timeout = 15000;
+const timeout = 20000;
+
 let previousTime;
 
 Then(/^I should see "([^"]*)"$/, function(selector) {
@@ -16,7 +17,7 @@ Then(/^I should be logged in$/, function() {
     const el = browser.$('.sidebar-menu');
 
     el.waitForExist({timeout});
-    el.waitForDisplayed({timeout}); //TODO - better selector
+    el.waitForDisplayed({timeout});
 });
 
 Then(/^the coffee button should be visible$/, function() {
@@ -27,7 +28,6 @@ Then(/^the coffee button should be visible$/, function() {
 });
 
 Then(/^the donation modal should open$/, function() {
-    const el = browser.$("body.modal-open");
     const modal = browser.$("#donateModal");
 
     modal.waitForExist({timeout});
@@ -84,7 +84,7 @@ Then(/^the modal should open$/, function() {
     const body = browser.$("body");
     const el = browser.$("body.modal-open");
 
-    body.waitForDisplayed();
+    body.waitForDisplayed({timeout});
 
     el.waitForExist({timeout});
     el.waitForDisplayed({timeout});
@@ -100,7 +100,7 @@ Then(/^the navigation buttons should be available$/, function() {
 });
 
 Then(/^the video starts playing$/, function() {
-    browser.pause(1000);
+    browser.pause(2000);
     browser.waitUntil(function() {
         return browser.execute("return YT_APP.yt.player.getPlayerState()") === 1; //playing according to YT API
     }, {timeout});
@@ -153,12 +153,12 @@ Then(/^the word "([^"]*)" should be highlighted$/, function(word) {
 Then(/^the "([^"]*)" arrow should be visible$/, function(arrow) {
     const el = browser.$(".nav-" + arrow);
 
-    el.waitForDisplayed();
+    el.waitForExist({timeout});
+    el.waitForDisplayed({timeout});
 });
 
 Then(/^the "([^"]*)" arrow should not be visible$/, function(arrow) {
     const el = browser.$(".nav-" + arrow);
-
 
 	expect(el.isExisting()).to.be.equal(false);
 });
