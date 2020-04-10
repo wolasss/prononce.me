@@ -6,11 +6,6 @@ jobs:
       - image: circleci/node:12.14.1-buster-browsers
     steps:
       - checkout
-      - run:
-          name: "Pull Submodules"
-          command: |
-            git submodule init
-            git submodule update --remote
       - restore_cache:
           key: v5-dependency-cache-{{ checksum "package.json" }}
       - restore_cache:
