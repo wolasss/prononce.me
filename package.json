@@ -22,7 +22,7 @@
     "@wdio/sync": "^5.18.7",
     "chai": "^4.2.0",
     "cucumber": "^6.0.5",
-    "semantic-release": "^17.0.4",
+    "semantic-release": "^17.2.3",
     "start-server-and-test": "^1.10.11",
     "wdio-json-reporter": "^1.4.0",
     "wdio-spec-reporter": "^0.1.5",
